@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="bismillah-traders logo.png">
+    <title>FAQs - Bismillah Traders</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Frequently asked questions about pesticides, fertilizers, and agricultural solutions. Get expert answers from Bismillah Traders.">
+</head>
+<body>
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <div class="loader-text">Loading FAQs...</div>
+        </div>
+    </div>
+
+    <!-- Background Elements -->
+    <div class="bg-decoration"></div>
+    <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo-placeholder"><img src="bismillah-traders logo.png" height="50px"></div>
+                <h1 class="site-title">Bismillah Traders</h1>
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="faqs.html" class="active">FAQs</a></li>
+                    <li><a href="policies.html">Policies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- FAQs Hero Section -->
+    <section class="faqs-hero">
+        <div class="container">
+            <h1 class="page-title">Frequently Asked Questions</h1>
+            <p class="page-subtitle">Get expert answers to common agricultural and product-related questions</p>
+            <div class="search-box">
+                <input type="text" id="faq-search" placeholder="Search for answers..." />
+                <button class="search-btn">🔍</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Categories -->
+    <section class="faq-categories">
+        <div class="container">
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="all">All Questions</button>
+                <button class="filter-btn" data-category="products">Products</button>
+                <button class="filter-btn" data-category="application">Application</button>
+                <button class="filter-btn" data-category="safety">Safety</button>
+                <button class="filter-btn" data-category="business">Business</button>
+                <button class="filter-btn" data-category="delivery">Delivery</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faqs">
+        <div class="container">
+            <div class="faq-container">
+                <!-- Product Related FAQs -->
+                <div class="faq-category" data-category="products">
+                    <h3 class="category-title">Product Information</h3>
+                    
+                    <div class="faq-item card-base" data-category="products">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>What is the best pesticide for wheat crops?</span>
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Actara (Syngenta) is highly effective for sucking pests in wheat crops. For aphids specifically, Confidor (Bayer) works exceptionally well. The choice depends on the specific pest problem and growth stage of the crop. We recommend consulting our experts for crop-specific recommendations.</p>
+                            <div class="answer-actions">
+                                <a href="products.html" class="btn-secondary">View Products</a>
+                                <a href="contact.html" class="btn-secondary">Get Consultation</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item card-base" data-category="products">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Which companies' products do you stock?</span>
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We stock authentic products from leading manufacturers including Bayer, Syngenta, FMC, Arysta, Captaan, Patron, and Sungrow. All products are sourced directly from authorized distributors to ensure quality and authenticity.</p>
+                            <div class="product-brands">
+                                <span class="brand-tag">Bayer</span>
+                                <span class="brand-tag">Syngenta</span>
+                                <span class="brand-tag">FMC</span>
+                                <span class="brand-tag">Arysta</span>
+                                <span class="brand-tag">Captaan</span>
+                                <span class="brand-tag">Patron</span>
+                                <span class="brand-tag">Sungrow</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item card-base" data-category="products">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>How do I know if a product is suitable for my crop?</span>
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our expert team can help you select the right products based on your crop type, pest issues, soil conditions, and weather patterns. We provide detailed product recommendations with proper usage guidelines. Contact us for personalized consultation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Application Related FAQs -->
+                <div class="faq-category" data-category="application">
+                    <h3 class="category-title">Application & Dosage</h3>
+                    
+                    <div class="faq-item card-base" data-category="application">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>How to calculate pesticide dosage?</span>
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Always follow the manufacturer's label instructions carefully. For example, Actara 25WG should be used at 60 grams per acre in 100-120 liters of water. Dosage may vary based on crop type, pest severity, and environmental conditions.</p>
+                            <div class="dosage-example">
+                                <h4>Example Calculation:</h4>
+                                <ul>
+                                    <li>Product: Actara 25WG</li>
+                                    <li>Dosage: 60g per acre</li>
+                                    <li>Water: 100-120 liters per acre</li>
+                                    <li>Coverage: Apply during early morning or evening</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item card-base" data-category="application">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>What is the best time to apply pesticides?</span>
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The ideal time for pesticide application is during early morning (6-9 AM) or late evening (5-7 PM) when temperatures are cooler and wind speeds are low. Avoid application during midday heat, windy conditions, or before expected rainfall.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item card-base" data-category="application">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Can I mix different pesticides together?</span>
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Some pesticides can be tank-mixed, but always check compatibility first. Never mix products without consulting the manufacturer's guidelines or our experts. Incompatible mixing can reduce effectiveness or cause crop damage.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Safety Related FAQs -->
+                <div class="faq-category" data-category="safety">
+                    <h3 class="category-title">Safety & Precautions</h3>
+                    
+                    <div class="faq-item card-base" data-category="safety">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>What safety equipment should I use while spraying?</span>
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Always wear protective equipment including masks, gloves, long-sleeved clothing, and eye protection. Ensure proper ventilation and avoid eating, drinking, or smoking during application. Wash thoroughly after use.</p>
+                            <div class="safety-checklist">
+                                <h4>Safety Checklist:</h4>
+                                <ul>
+                                    <li>✓ Protective mask or respirator</li>
+                                    <li>✓ Chemical-resistant gloves</li>
+                                    <li>✓ Long-sleeved shirt and pants</li>
+                                    <li>✓ Eye protection</li>
+                                    <li>✓ Closed shoes</li>
+                                    <li>✓ Proper ventilation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item card-base" data-category="safety">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>How should I store pesticides safely?</span>
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Store pesticides in original containers in a cool, dry, well-ventilated area away from children, pets, food, and feed. Keep them locked and maintain proper temperature. Never transfer to food or drink containers.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business Related FAQs -->
+                <div class="faq-category" data-category="business">
+                    <h3 class="category-title">Business & Pricing</h3>
+                    
+                    <div class="faq-item card-base" data-category="business">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Do you offer credit facilities?</span>
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we provide credit facilities to our regular customers under 30-day payment terms. This is available after a mutual agreement and depends on purchase history and relationship with our shop. Contact us to discuss credit arrangements.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item card-base" data-category="business">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Do you offer bulk discounts?</span>
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we offer attractive discounts on bulk purchases. Discount rates vary based on quantity and product type. Contact us with your requirements for a customized quote with the best possible rates.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item card-base" data-category="business">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>What are your operating hours?</span>
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We are open from 9 AM to 6 PM every day of the week. For urgent requirements outside business hours, you can contact us via WhatsApp at 0337-1617023 or call 0347-7064241.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Delivery Related FAQs -->
+                <div class="faq-category" data-category="delivery">
+                    <h3 class="category-title">Delivery & Service</h3>
+                    
+                    <div class="faq-item card-base" data-category="delivery">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Do you provide home delivery?</span>
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we provide home delivery throughout Sargodha and surrounding areas. Same-day delivery is available for orders placed before 2 PM. Free delivery is offered on orders above PKR 5,000.</p>
+                            <div class="delivery-info">
+                                <h4>Delivery Details:</h4>
+                                <ul>
+                                    <li>Same-day delivery available</li>
+                                    <li>Free delivery on orders above PKR 5,000</li>
+                                    <li>GPS tracking for your orders</li>
+                                    <li>Secure packaging guaranteed</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item card-base" data-category="delivery">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>What are the delivery charges?</span>
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Delivery charges vary based on location and order value. Within Sargodha city, charges are PKR 200-300. For surrounding areas, charges may be PKR 300-500. Free delivery is available on orders above PKR 5,000.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Still Have Questions Section -->
+            <div class="contact-section">
+                <h3>Still Have Questions?</h3>
+                <p>Can't find the answer you're looking for? Our expert team is here to help!</p>
+                <div class="contact-options">
+                    <a href="https://wa.me/923371617023" class="btn-primary">WhatsApp Us</a>
+                    <a href="tel:+923371617023" class="btn-secondary">Call Now</a>
+                    <a href="contact.html" class="btn-secondary">Visit Shop</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="services.html">Services</a>
+                <a href="faqs.html">FAQs</a>
+                <a href="policies.html">Policies</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-text">
+                <p>&copy; 2025 Bismillah Traders. All rights reserved.</p>
+                <p>Trusted Agricultural Solutions Provider in Sargodha</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+
+    <script src="js/main.js"></script>
+    <script>
+        // FAQs page specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            initFAQSearch();
+            initFAQFilters();
+            initFAQAnimations();
+        });
+
+        function initFAQSearch() {
+            const searchInput = document.getElementById('faq-search');
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                
+                faqItems.forEach(item => {
+                    const question = item.querySelector('.faq-question span').textContent.toLowerCase();
+                    const answer = item.querySelector('.faq-answer p').textContent.toLowerCase();
+                    
+                    if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                        item.style.display = 'block';
+                        item.style.opacity = '1';
+                        item.style.transform = 'translateY(0)';
+                        
+                        // Highlight search terms
+                        if (searchTerm) {
+                            highlightSearchTerm(item, searchTerm);
+                        }
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'translateY(-20px)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+                
+                // Show/hide category titles
+                const categories = document.querySelectorAll('.faq-category');
+                categories.forEach(category => {
+                    const visibleItems = category.querySelectorAll('.faq-item[style*="block"]');
+                    const categoryTitle = category.querySelector('.category-title');
+                    
+                    if (visibleItems.length > 0) {
+                        categoryTitle.style.display = 'block';
+                    } else {
+                        categoryTitle.style.display = 'none';
+                    }
+                });
+            });
+        }
+
+        function highlightSearchTerm(item, term) {
+            const question = item.querySelector('.faq-question span');
+            const answer = item.querySelector('.faq-answer p');
+            
+            [question, answer].forEach(element => {
+                const text = element.textContent;
+                const highlightedText = text.replace(
+                    new RegExp(term, 'gi'), 
+                    match => `<mark class="search-highlight">${match}</mark>`
+                );
+                element.innerHTML = highlightedText;
+            });
+        }
+
+        function initFAQFilters() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const faqItems = document.querySelectorAll('.faq-item');
+            const categories = document.querySelectorAll('.faq-category');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const filter = this.dataset.category;
+                    
+                    // Update active button
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Add click animation
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 150);
+                    
+                    // Filter FAQs
+                    if (filter === 'all') {
+                        faqItems.forEach((item, index) => {
+                            setTimeout(() => {
+                                item.style.display = 'block';
+                                item.style.opacity = '1';
+                                item.style.transform = 'translateY(0)';
+                            }, index * 50);
+                        });
+                        
+                        categories.forEach(category => {
+                            category.style.display = 'block';
+                        });
+                    } else {
+                        // Hide all items first
+                        faqItems.forEach(item => {
+                            item.style.opacity = '0';
+                            item.style.transform = 'translateY(-20px)';
+                            setTimeout(() => {
+                                if (!item.dataset.category.includes(filter)) {
+                                    item.style.display = 'none';
+                                }
+                            }, 300);
+                        });
+                        
+                        // Show filtered items
+                        const filteredItems = Array.from(faqItems).filter(item => 
+                            item.dataset.category.includes(filter)
+                        );
+                        
+                        setTimeout(() => {
+                            filteredItems.forEach((item, index) => {
+                                setTimeout(() => {
+                                    item.style.display = 'block';
+                                    setTimeout(() => {
+                                        item.style.opacity = '1';
+                                        item.style.transform = 'translateY(0)';
+                                    }, 50);
+                                }, index * 100);
+                            });
+                        }, 300);
+                        
+                        // Show/hide categories
+                        categories.forEach(category => {
+                            const categoryItems = category.querySelectorAll(`[data-category*="${filter}"]`);
+                            if (categoryItems.length > 0) {
+                                category.style.display = 'block';
+                            } else {
+                                category.style.display = 'none';
+                            }
+                        });
+                    }
+                });
+            });
+        }
+
+        function initFAQAnimations() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            // Staggered entrance animation
+            faqItems.forEach((item, index) => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(30px)';
+                
+                setTimeout(() => {
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateY(0)';
+                }, index * 100);
+            });
+        }
+
+        // Enhanced FAQ toggle function
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const toggle = element.querySelector('.faq-toggle');
+            const allFaqItems = document.querySelectorAll('.faq-item');
+            
+            // Close all other FAQs with animation
+            allFaqItems.forEach(item => {
+                const otherAnswer = item.querySelector('.faq-answer');
+                const otherToggle = item.querySelector('.faq-toggle');
+                const otherQuestion = item.querySelector('.faq-question');
+                
+                if (otherAnswer !== answer && otherAnswer.classList.contains('active')) {
+                    otherAnswer.classList.remove('active');
+                    otherToggle.classList.remove('active');
+                    otherQuestion.style.background = '';
+                    
+                    // Add closing animation
+                    otherAnswer.style.animation = 'slideUp 0.3s ease';
+                }
+            });
+            
+            // Toggle current FAQ
+            const isActive = answer.classList.contains('active');
+            
+            if (!isActive) {
+                answer.classList.add('active');
+                toggle.classList.add('active');
+                element.style.background = 'linear-gradient(135deg, var(--secondary-green), var(--primary-green))';
+                
+                // Add opening animation
+                answer.style.animation = 'slideDown 0.5s ease';
+                
+                // Scroll to FAQ if needed
+                setTimeout(() => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.bottom > window.innerHeight) {
+                        element.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    }
+                }, 300);
+            } else {
+                answer.classList.remove('active');
+                toggle.classList.remove('active');
+                element.style.background = '';
+                
+                // Add closing animation
+                answer.style.animation = 'slideUp 0.3s ease';
+            }
+            
+            // Add click effect
+            element.style.transform = 'scale(0.98)';
+            setTimeout(() => {
+                element.style.transform = '';
+            }, 150);
+            
+            // Create ripple effect
+            createRipple(event, element);
+        }
+
+        // Utility function for ripple effect
+        function createRipple(event, element) {
+            const circle = document.createElement('span');
+            const diameter = Math.max(element.clientWidth, element.clientHeight);
+            const radius = diameter / 2;
+            
+            const rect = element.getBoundingClientRect();
+            circle.style.width = circle.style.height = diameter + 'px';
+            circle.style.left = (event.clientX - rect.left - radius) + 'px';
+            circle.style.top = (event.clientY - rect.top - radius) + 'px';
+            circle.classList.add('ripple');
+            
+            circle.style.position = 'absolute';
+            circle.style.borderRadius = '50%';
+            circle.style.background = 'rgba(255,255,255,0.6)';
+            circle.style.transform = 'scale(0)';
+            circle.style.animation = 'ripple-animation 0.6s linear';
+            circle.style.pointerEvents = 'none';
+            
+            element.style.position = 'relative';
+            element.style.overflow = 'hidden';
+            
+            const ripple = element.getElementsByClassName('ripple')[0];
+            if (ripple) {
+                ripple.remove();
+            }
+            
+            element.appendChild(circle);
+            
+            setTimeout(() => {
+                circle.remove();
+            }, 600);
+        }
+    </script>
+    
+    <style>
+        /* FAQs page specific styles */
+        .faqs-hero {
+            padding: 8rem 0 4rem;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(26, 77, 46, 0.1), rgba(74, 124, 90, 0.1));
+        }
+        
+        .search-box {
+            max-width: 500px;
+            margin: 0 auto;
+            position: relative;
+            margin-top: 3rem;
+        }
+        
+        .search-box input {
+            width: 100%;
+            padding: 1.5rem 4rem 1.5rem 2rem;
+            border: 2px solid var(--accent-green);
+            border-radius: 30px;
+            font-size: 1.1rem;
+            outline: none;
+            transition: var(--transition-smooth);
+            background: var(--white);
+        }
+        
+        .search-box input:focus {
+            border-color: var(--secondary-green);
+            box-shadow: 0 0 20px rgba(74, 124, 90, 0.3);
+            transform: scale(1.02);
+        }
+        
+        .search-btn {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            background: var(--accent-green);
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: var(--transition-smooth);
+        }
+        
+        .search-btn:hover {
+            background: var(--secondary-green);
+            transform: translateY(-50%) scale(1.1);
+        }
+        
+        .faq-categories {
+            padding: 2rem 0;
+            background: rgba(74, 124, 90, 0.05);
+        }
+        
+        .category-filters {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: 1rem 2rem;
+            background: transparent;
+            border: 2px solid var(--accent-green);
+            color: var(--accent-green);
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--transition-bounce);
+            font-size: 1rem;
+        }
+        
+        .filter-btn:hover {
+            background: var(--accent-green);
+            color: var(--white);
+            transform: translateY(-3px) scale(1.05);
+        }
+        
+        .filter-btn.active {
+            background: var(--accent-green);
+            color: var(--white);
+            transform: scale(1.05);
+        }
+        
+        .faq-category {
+            margin-bottom: 4rem;
+        }
+        
+        .category-title {
+            font-size: 2rem;
+            color: var(--primary-green);
+            margin-bottom: 2rem;
+            text-align: center;
+            font-weight: 700;
+            position: relative;
+        }
+        
+        .category-title::after {
+            content: '';
+            width: 80px;
+            height: 3px;
+            background: var(--accent-green);
+            display: block;
+            margin: 1rem auto;
+            border-radius: 2px;
+        }
+        
+        .faq-item {
+            transition: var(--transition-smooth);
+        }
+        
+        .answer-actions {
+            margin-top: 2rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--accent-green);
+            border: 2px solid var(--accent-green);
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition-bounce);
+            font-size: 0.9rem;
+        }
+        
+        .btn-secondary:hover {
+            background: var(--accent-green);
+            color: var(--white);
+            transform: translateY(-2px) scale(1.05);
+        }
+        
+        .product-brands {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+        
+        .brand-tag {
+            background: rgba(74, 124, 90, 0.1);
+            color: var(--accent-green);
+            padding: 0.5rem 1rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        
+        .dosage-example,
+        .safety-checklist,
+        .delivery-info {
+            background: rgba(74, 124, 90, 0.05);
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin-top: 1rem;
+            border-left: 4px solid var(--accent-green);
+        }
+        
+        .dosage-example h4,
+        .safety-checklist h4,
+        .delivery-info h4 {
+            color: var(--primary-green);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .dosage-example ul,
+        .safety-checklist ul,
+        .delivery-info ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .dosage-example li,
+        .safety-checklist li,
+        .delivery-info li {
+            padding: 0.3rem 0;
+            color: var(--text-light);
+        }
+        
+        .safety-checklist li::before {
+            content: '✓ ';
+            color: var(--accent-green);
+            font-weight: bold;
+        }
+        
+        .contact-section {
+            background: linear-gradient(135deg, var(--white), #f8fffe);
+            padding: 4rem 3rem;
+            border-radius: 25px;
+            text-align: center;
+            margin-top: 4rem;
+            box-shadow: var(--shadow-light);
+            border: 1px solid rgba(74, 124, 90, 0.1);
+        }
+        
+        .contact-section h3 {
+            font-size: 2rem;
+            color: var(--primary-green);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .contact-section p {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+        }
+        
+        .contact-options {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .search-highlight {
+            background: yellow;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        
+        /* Animations */
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                max-height: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                max-height: 300px;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideUp {
+            from {
+                opacity: 1;
+                max-height: 300px;
+                transform: translateY(0);
+            }
+            to {
+                opacity: 0;
+                max-height: 0;
+                transform: translateY(-10px);
+            }
+        }
+        
+        @keyframes ripple-animation {
+            to {
+                transform: scale(4);
+                opacity: 0;
+            }
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .category-filters {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .filter-btn {
+                width: 200px;
+            }
+            
+            .answer-actions {
+                flex-direction: column;
+            }
+            
+            .btn-secondary {
+                text-align: center;
+            }
+            
+            .contact-options {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .product-brands {
+                justify-content: center;
+            }
+        }
+    </style>
+</body>
+</html>

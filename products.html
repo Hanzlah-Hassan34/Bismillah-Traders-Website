@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="bismillah-traders logo.png">
+
+    <title>Products - Bismillah Traders</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Explore our wide range of pesticides, fertilizers, and agricultural products from top brands like Bayer, Syngenta, FMC.">
+</head>
+<body>
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <div class="loader-text">Loading Products...</div>
+        </div>
+    </div>
+
+    <!-- Background Elements -->
+    <div class="bg-decoration"></div>
+    <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo-placeholder"><img src="bismillah-traders logo.png" height="50px"></div>
+                <h1 class="site-title">Bismillah Traders</h1>
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="policies.html">Policies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Products Hero Section -->
+    <section class="products-hero">
+        <div class="container">
+            <h1 class="page-title">Our Premium Products</h1>
+            <p class="page-subtitle">Discover high-quality agricultural solutions from trusted manufacturers</p>
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="insecticides">Insecticides</button>
+                <button class="filter-btn" data-filter="herbicides">Herbicides</button>
+                <button class="filter-btn" data-filter="fungicides">Fungicides</button>
+                <button class="filter-btn" data-filter="fertilizers">Fertilizers</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories Section -->
+    <section id="products">
+        <div class="container">
+            <h2 class="section-title">Product Categories</h2>
+            <div class="categories-grid">
+                <div class="category-card card-base" data-category="insecticides" id="insecticides">
+                    <div class="category-icon">🐛</div>
+                    <h3>Insecticides</h3>
+                    <p>Effective pest control solutions for all crop types</p>
+                    <div class="category-stats">
+                        <span class="stat">15+ Products</span>
+                        <span class="stat">5 Companies</span>
+                    </div>
+                </div>
+                <div class="category-card card-base" data-category="herbicides" id="herbicides">
+                    <div class="category-icon">🌾</div>
+                    <h3>Herbicides</h3>
+                    <p>Advanced weed management systems</p>
+                    <div class="category-stats">
+                        <span class="stat">12+ Products</span>
+                        <span class="stat">4 Companies</span>
+                    </div>
+                </div>
+                <div class="category-card card-base" data-category="fungicides" id="fungicides">
+                    <div class="category-icon">🍄</div>
+                    <h3>Fungicides</h3>
+                    <p>Disease prevention and control solutions</p>
+                    <div class="category-stats">
+                        <span class="stat">10+ Products</span>
+                        <span class="stat">3 Companies</span>
+                    </div>
+                </div>
+                <div class="category-card card-base" data-category="fertilizers">
+                    <div class="category-icon">🧪</div>
+                    <h3>Bio-fertilizers</h3>
+                    <p>Organic nutrition for sustainable farming</p>
+                    <div class="category-stats">
+                        <span class="stat">8+ Products</span>
+                        <span class="stat">3 Companies</span>
+                    </div>
+                </div>
+                <div class="category-card card-base" data-category="fertilizers">
+                    <div class="category-icon">⚗️</div>
+                    <h3>Micronutrients</h3>
+                    <p>Essential trace elements for plant health</p>
+                    <div class="category-stats">
+                        <span class="stat">6+ Products</span>
+                        <span class="stat">2 Companies</span>
+                    </div>
+                </div>
+                <div class="category-card card-base" data-category="fertilizers">
+                    <div class="category-icon">🌿</div>
+                    <h3>Growth Regulators</h3>
+                    <p>Plant development and yield enhancers</p>
+                    <div class="category-stats">
+                        <span class="stat">5+ Products</span>
+                        <span class="stat">2 Companies</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Products Section -->
+    <section id="company-products">
+        <div class="container">
+            <h2 class="section-title">Products by Company</h2>
+            
+            <!-- Bayer Products -->
+            <div class="company-section" data-company="bayer">
+                <h3 class="company-title">
+                    <span class="company-logo"><img src="bayerlogo-removebg-preview.png" height="80px"></span>
+                    Bayer
+                    <span class="company-badge">Premium Quality</span>
+                </h3>
+                <div class="products-grid">
+                    <!-- Bayer Insecticides -->
+                    <div class="product-card card-base" data-category="insecticides">
+                        <div class="product-card-inner">
+                            <div class="product-card-front">
+                                <div class="product-image"><img src="bayer-allite.jpg" alt="no img" height="300px"></div>
+                                <div class="product-info">
+                                    <h4>Alliate</h4>
+                                </div>
+                            </div>
+                            <div class="product-card-back">
+                                <div class="product-back-content">
+                                    <div class="product-description">
+                                        <p>Alliate is a pre-emergent herbicide used to control annual grasses and broadleaf weeds, especially in rice cultivation.
+Recommended dosage: 400–600 ml per acre, depending on weed intensity and field conditions.
+</p>
+                                    </div>
+                                    <div class="product-contact">
+                                        <a href="https://wa.me/923371617023?text=I%20want%20to%20buy%20Confidor%20from%20Bayer" class="btn-primary contact-btn" onclick="createParticles(event, this)">
+                                            <span class="btn-text">Contact Now</span>
+                                            <span class="btn-icon">📞</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card card-base" data-category="insecticides">
+                        <div class="product-image"><img src="bayer-ambition1.jpg"  height="300px"></div>
+                        <div class="product-info">
+                            <h4>Ambition</h4>
+                            <p>Ambition is a biostimulant that enhances plant growth, stress resistance, and fruit setting across multiple crops.
+Recommended dose: 400–600 ml per acre for foliar spray or 1 liter per acre for soil drenching.</p>
+                            <div class="product-tags">
+                                <span class="tag insecticide">Insecticide</span>
+                                <span class="tag broad-spectrum">Broad Spectrum</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/923371617023?text=I%20want%20to%20buy%20Advantage%20from%20Bayer" class="btn-primary" onclick="createParticles(event, this)">Buy Now</a>
+                    </div>
+                    <div class="product-card card-base" data-category="insecticides">
+                        <div class="product-image"><img src="bayer-belt.png"  height="300px"></div>
+                        <div class="product-info">
+                            <h4>Belt</h4>
+                            <p>Advanced insecticide with unique mode of action for lepidopterous pests. Long lasting protection</p>
+                            <div class="product-tags">
+                                <span class="tag insecticide">Insecticide</span>
+                                <span class="tag advanced">Advanced</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/923371617023?text=I%20want%20to%20buy%20Belt%20from%20Bayer" class="btn-primary" onclick="createParticles(event, this)">Buy Now</a>
+                    </div>
+                    <div class="product-card card-base" data-category="insecticides">
+                        <div class="product-image"><img src="bayer-antracol-removebg-preview.png"  height="300px"></div>
+                        <div class="product-info">
+                            <h4>Antracol</h4>
+                            <p>A zinc-based fungicide used to control blight, mildew, and leaf spot in fruits, vegetables, and cereals.
+Recommended dose: 600 g per acre in 200 liters of waterr</p>
+                            <div class="product-tags">
+                                <span class="tag insecticide">Insecticide</span>
+                                <span class="tag premium">Premium</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/923371617023?text=I%20want%20to%20buy%20Calypso%20from%20Bayer" class="btn-primary" onclick="createParticles(event, this)">Buy Now</a>
+                    </div>
+                    
+                    <div class="product-card card-base" data-category="fungicides">
+                        <div class="product-image"><img src="bayer-nativo-removebg-preview.png" height="300px"></div>
+                        <div class="product-info">
+                            <h4>Nativo</h4>
+                            <p>Premium fungicide for disease prevention and control. Excellent for wheat rust and cotton diseases</p>
+                            <div class="product-tags">
+                                <span class="tag fungicide">Fungicide</span>
+                                <span class="tag preventive">Preventive</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/923371617023?text=I%20want%20to%20buy%20Nativo%20from%20Bayer" class="btn-primary" onclick="createParticles(event, this)">Buy Now</a>
+                    </div>
+                    <div class="product-card card-base" data-category="fungicides">
+                        <div class="product-image"><img src="bayer-busctril_super-removebg-preview.png" height="300px"></div>
+                        <div class="product-info">
+                            <h4>Buctril Super</h4>
+                            <p>Buctril Super is a post-emergent herbicide used to control broadleaf weeds in wheat, maize, and sorghum crops.
+Recommended dose: 300–900 ml per acre, applied during early weed growth stage</p>
+                            <div class="product-tags">
+                                <span class="tag fungicide">Fungicide</span>
+                                <span class="tag multi-site">Multi-site</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/923371617023?text=I%20want%20to%20buy%20Antracol%20from%20Bayer" class="btn-primary" onclick="createParticles(event, this)">Buy Now</a>
+                    </div>
+                    
+                    
+                  
+                    
+                    
+                    
+                </div>
+            </div>
+
+            <!-- Arysta Products -->
+            <div class="company-section" data-company="Arysta">
+                <h3 class="company-title">
+                    <span class="company-logo"><img src="arystaloggo-removebg-preview.png" height="80px"></span>
+                    Arysta
+                    <span class="company-badge">Innovation Leader</span>
+                </h3>
+                <div class="products-grid">
+                    <div class="product-card card-base" data-category="insecticides">
+                        <div class="product-image"><img src="sulphur-arysta-removebg-preview.png" height="300px"></div>
+                        <div class="product-info">
+                            <h4>Sulphur</h4>
+                            <p>Sulphur offers vital plant nutrition and disease control. Apply as per specific crop recommendations, typically 1.5-3 kg/acre, for optimal health and yield.</p>
+                          
+                        </div>
+                        <a href="https://wa.me/923371617023?text=I%20want%20to%20buy%20Actara%20from%20Syngenta" class="btn-primary" onclick="createParticles(event, this)">Buy Now</a>
+                    </div>
+                    <div class="product-card card-base" data-category="insecticides">
+                        <div class="product-image"><img src="arysta-success.jpg" height="300px"></div>
+                        <div class="product-info">
+                            <h4>Success</h4>
+                            <p>A dual-action fungicide offers powerful preventive and curative disease control. For most crops, apply 200-250 gm per 100 liters of water for effective management of Downy Mildew, Early Blight, and Late Blight.</p>
+                            <div class="product-tags">
+                                <span class="tag insecticide">Insecticide</span>
+                                <span class="tag dual-action">Dual Action</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/923371617023?text=I%20want%20to%20buy%20Ampligo%20from%20Syngenta" class="btn-primary" onclick="createParticles(event, this)">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Patron Products -->
+            <div class="company-section" data-company="Patron">
+                <h3 class="company-title">
+                    <span class="company-logo"><img src="patronLogo-removebg-preview.png" height="80px"></span>
+                    Patron
+                    <span class="company-badge">Advanced Technology</span>
+                </h3>
+                <div class="products-grid">
+                    <div class="product-card card-base" data-category="insecticides">
+                        <div class="product-image"><img src="kong-patron.png" height="300px"></div>
+                        <div class="product-info">
+                            <h4>Kong</h4>
+                            <p>Kong is a systemic, non-selective herbicide used to eliminate annual and perennial weeds on non-crop land and around field margins.
+Recommended dose: 2–8 L per hectare (≈800 ml–3.2 L per acre), applied as a foliar spray in 200–500 L water per hectare</p>
+                            <div class="product-tags">
+                                <span class="tag insecticide">Insecticide</span>
+                                <span class="tag specialized">Specialized</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/923371617023?text=I%20want%20to%20buy%20Proclaim%20from%20Arysta" class="btn-primary" onclick="createParticles(event, this)">Buy Now</a>
+                    </div>
+                    <div class="product-card card-base" data-category="insecticides">
+                        <div class="product-image"><img src="asylum-Patron.png" height="300px"></div>
+                        <div class="product-info">
+                            <h4>Asylum</h4>
+                            <p>It is a systemic fungicide combining azoxystrobin and difenoconazole to control key fungal diseases like blast, blight, and mildew in rice, wheat, and vegetables , dose: 300–500 ml per acre, applied as foliar spray </p>
+                            <div class="product-tags">
+                                <span class="tag insecticide">Insecticide</span>
+                                <span class="tag systemic">Systemic</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/923371617023?text=I%20want%20to%20buy%20Movento%20from%20Arysta" class="btn-primary" onclick="createParticles(event, this)">Buy Now</a>
+                    </div>
+                    <div class="product-card card-base" data-category="insecticides">
+                        <div class="product-image"><img src="sulfix-patron.png" height="300px"></div>
+                        <div class="product-info">
+                            <h4>Sulphux</h4>
+                            <p>It is a contact fungicide containing sulphur used to control powdery mildew, mites, and leaf spots in various crops, dose: 800–1000 ml per acre, applied as foliar spray</p>
+                            <div class="product-tags">
+                                <span class="tag insecticide">Insecticide</span>
+                                <span class="tag novel">Novel</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/923371617023?text=I%20want%20to%20buy%20Closer%20from%20Arysta" class="btn-primary" onclick="createParticles(event, this)">Buy Now</a>
+                    </div>
+                    
+                    <div class="product-card card-base" data-category="fungicides">
+                        <div class="product-image"><img src="elevator-patron.png" height="300px"></div>
+                        <div class="product-info">
+                            <h4>Elevator</h4>
+                            <p>It is a plant growth promoter enriched with essential nutrients to enhance root development, plant vigor, and overall crop yield in all major crops, dose: 300–500 ml per acre, applied as foliar spray</p>
+                           
+                        </div>
+                        <a href="https://wa.me/923371617023?text=I%20want%20to%20buy%20Mirage%20from%20Arysta" class="btn-primary" onclick="createParticles(event, this)">Buy Now</a>
+                    </div>
+                    
+                   
+                </div>
+            </div>
+
+            <!-- KCS Products -->
+            <div class="company-section" data-company="kcs">
+                <h3 class="company-title">
+                    <span class="company-logo"><img src="kcs-logo.jpg" height="100px"></span>
+                    Khushal Crop Sciences
+                    <span class="company-badge">Trusted Quality</span>
+                </h3>
+                <div class="products-grid">
+                    <div class="product-card card-base" data-category="insecticides">
+                        <div class="product-image"><img src="yupu-KCS-removebg-preview.png" height="300px" ></div>
+                        <div class="product-info">
+                            <h4>Yupo</h4>
+                            <p>It is a systemic insecticide containing imidacloprid used to control sucking pests like aphids, whiteflies, and jassids in vegetables, fruit trees, and cotton, dose: 200–300 ml per acre, applied as foliar spray or soil drench</p>
+                            <div class="product-tags">
+                                <span class="tag insecticide">Insecticide</span>
+                                <span class="tag combination">Combination</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/923371617023?text=I%20want%20to%20buy%20Imida%20Plus%20from%20Captaan" class="btn-primary" onclick="createParticles(event, this)">Buy Now</a>
+                    </div>
+                    <div class="product-card card-base" data-category="insecticides">
+                        <div class="product-image"><img src="Lambda-KCS__2_-removebg-preview.png" height="300px" ></div>
+                        <div class="product-info">
+                            <h4>Lambda</h4>
+                            <p>It is a synthetic pyrethroid insecticide containing lambda-cyhalothrin used to control a broad spectrum of chewing and sucking pests in vegetables, cotton, and field crops, dose: 200–400 ml per acre, applied as foliar spray.
+</p>
+                            <div class="product-tags">
+                                <span class="tag insecticide">Insecticide</span>
+                                <span class="tag economic">Economic</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/923371617023?text=I%20want%20to%20buy%20Cypermethrin%2025%20from%20Captaan" class="btn-primary" onclick="createParticles(event, this)">Buy Now</a>
+                    </div>
+                    
+                    <div class="product-card card-base" data-category="fungicides">
+                        <div class="product-image"><img src="Bifenthrin-KCS-removebg-preview.png" height="300px"></div>
+                        <div class="product-info">
+                            <h4>Bifenthrin</h4>
+                            <p>It is a broad-spectrum insecticide containing bifenthrin used to control termites, borers, and sucking pests in cotton, vegetables, and sugarcane, dose: 300–500 ml per acre, applied as foliar spray</p>
+                            <div class="product-tags">
+                                <span class="tag fungicide">Fungicide</span>
+                                <span class="tag copper">Copper-based</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/923371617023?text=I%20want%20to%20buy%20Captaan%20Copper%20from%20Captaan" class="btn-primary" onclick="createParticles(event, this)">Buy Now</a>
+                    </div>
+                    <div class="product-card card-base" data-category="fungicides">
+                        <div class="product-image"><img src="chloro-kcs-removebg-preview.png" height="300px"></div>
+                        <div class="product-info">
+                            <h4>Chloropyrifos</h4>
+                            <p>It is an organophosphate insecticide containing chlorpyrifos used to control termites, borers, and foliar pests in rice, sugarcane, and vegetables, dose: 400–600 ml per acre, applied as foliar spray or soil drench.</p>
+                            <div class="product-tags">
+                                <span class="tag fungicide">Fungicide</span>
+                                <span class="tag protectant">Protectant</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/923371617023?text=I%20want%20to%20buy%20Mancozeb%2075%20from%20Captaan" class="btn-primary" onclick="createParticles(event, this)">Buy Now</a>
+                    </div>
+                    
+                   
+                </div>
+            </div>
+
+            <!-- SunGrow Products -->
+            <div class="company-section" data-company="SunGro">
+                <h3 class="company-title">
+                    <span class="company-logo"><img src="sungrologo-removebg-preview.png" height="80px" width="200px"></span>
+                    SunGro
+                    <span class="company-badge">Reliable Solutions</span>
+                </h3>
+                <div class="products-grid">
+                    <div class="product-card card-base" data-category="insecticides">
+                        <div class="product-image"><img src="sungrow-high_flow-removebg-preview.png" height="300px"></div>
+                        <div class="product-info">
+                            <h4>High Flow</h4>
+                            <p>High Flow is an insect growth regulator (Pyriproxyfen) used to disrupt development and reproduction of sucking pests like whiteflies and aphids.
+Recommended dose: 200–300 ml per acre, applied as foliar spray at early infestation stage.
+
+</p>
+                            <div class="product-tags">
+                                <span class="tag insecticide">Insecticide</span>
+                                <span class="tag multi-purpose">Multi-Purpose</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/923371617023?text=I%20want%20to%20buy%20Talstar%20from%20FMC" class="btn-primary" onclick="createParticles(event, this)">Buy Now</a>
+                    </div>
+                    <div class="product-card card-base" data-category="insecticides">
+                        <div class="product-image"><img src="sungrow-flisto.jpg" height="300px"></div>
+                        <div class="product-info">
+                            <h4>Flisto Gold</h4>
+                            <p>Flisto Gold is a post-emergent herbicide that effectively controls narrow- and broad-leaf weeds in sugarcane and maize.
+Recommended dose: 1–1.5 L per acre, applied during early weed emergence stages</p>
+                            <div class="product-tags">
+                                <span class="tag insecticide">Insecticide</span>
+                                <span class="tag advanced">Advanced</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/923371617023?text=I%20want%20to%20buy%20Coragen%20from%20FMC" class="btn-primary" onclick="createParticles(event, this)">Buy Now</a>
+                    </div>
+                    <div class="product-card card-base" data-category="insecticides">
+                        <div class="product-image"><img src="sungrow-logo-removebg-preview.png" height="300px"></div>
+                        <div class="product-info">
+                            <h4>Logo</h4>
+                            <p>Logo is a versatile crop protection product designed to manage common pests or diseases across various crops.
+Recommended dose: 300–500 ml per acre, applied via foliar spray at the onset of infestation or disease symptoms.</p>
+                            <div class="product-tags">
+                                <span class="tag insecticide">Insecticide</span>
+                                <span class="tag fast-acting">Fast Acting</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/923371617023?text=I%20want%20to%20buy%20Brigade%20from%20FMC" class="btn-primary" onclick="createParticles(event, this)">Buy Now</a>
+                    </div>
+                    
+                    <div class="product-card card-base" data-category="herbicides">
+                        <div class="product-image"><img src="sungrow-hundred-removebg-preview.png" height="300px"></div>
+                        <div class="product-info">
+                            <h4>Hundred</h4>
+                            <p>Hundred is a broad-spectrum crop protection solution targeting key pests or diseases in field and horticultural crops.
+Recommended dose: as descrition on label  per acre, applied as a foliar spray when initial symptoms or pest activity begin.</p>
+                            <div class="product-tags">
+                                <span class="tag herbicide">Herbicide</span>
+                                <span class="tag pre-emergence">Pre-emergence</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/923371617023?text=I%20want%20to%20buy%20Authority%20from%20FMC" class="btn-primary" onclick="createParticles(event, this)">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="services.html">Services</a>
+                <a href="faqs.html">FAQs</a>
+                <a href="policies.html">Policies</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-text">
+                <p>&copy; 2025 Bismillah Traders. All rights reserved.</p>
+                <p>Trusted Agricultural Solutions Provider in Sargodha</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Products page specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            initProductFilters();
+            initProductAnimations();
+            initCompanyAnimations();
+        });
+
+        function initProductFilters() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const productCards = document.querySelectorAll('.product-card');
+            const companyBlocks = document.querySelectorAll('.company-section');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const filter = this.dataset.filter;
+                    
+                    // Update active button
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Add click animation
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 150);
+                    
+                    // Filter products with animation
+                    if (filter === 'all') {
+                        productCards.forEach((card, index) => {
+                            setTimeout(() => {
+                                card.style.display = 'flex';
+                                card.style.opacity = '0';
+                                card.style.transform = 'translateY(30px)';
+                                setTimeout(() => {
+                                    card.style.opacity = '1';
+                                    card.style.transform = 'translateY(0)';
+                                }, 50);
+                            }, index * 50);
+                        });
+                        
+                        companyBlocks.forEach(block => {
+                            block.style.display = 'block';
+                        });
+                    } else {
+                        // Hide all first
+                        productCards.forEach(card => {
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(30px)';
+                            setTimeout(() => {
+                                if (!card.dataset.category.includes(filter)) {
+                                    card.style.display = 'none';
+                                }
+                            }, 300);
+                        });
+                        
+                        // Show filtered products
+                        const filteredCards = Array.from(productCards).filter(card => 
+                            card.dataset.category.includes(filter)
+                        );
+                        
+                        setTimeout(() => {
+                            filteredCards.forEach((card, index) => {
+                                setTimeout(() => {
+                                    card.style.display = 'flex';
+                                    setTimeout(() => {
+                                        card.style.opacity = '1';
+                                        card.style.transform = 'translateY(0)';
+                                    }, 50);
+                                }, index * 100);
+                            });
+                        }, 300);
+                        
+                        // Hide empty company blocks
+                        companyBlocks.forEach(block => {
+                            const visibleCards = block.querySelectorAll(`.product-card[data-category*="${filter}"]`);
+                            if (visibleCards.length === 0) {
+                                block.style.display = 'none';
+                            } else {
+                                block.style.display = 'block';
+                            }
+                        });
+                    }
+                });
+            });
+        }
+
+        function initProductAnimations() {
+            const productCards = document.querySelectorAll('.product-card');
+            
+            productCards.forEach((card, index) => {
+                card.style.setProperty('--i', index);
+                
+                // Enhanced hover effects
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-20px) scale(1.05) rotateY(5deg)';
+                    this.style.boxShadow = '0 35px 70px rgba(0,0,0,0.2)';
+                    
+                    // Animate product image
+                    const image = this.querySelector('.product-image');
+                    if (image) {
+                        image.style.transform = 'scale(1.2) rotate(10deg)';
+                    }
+                    
+                    // Animate tags
+                    const tags = this.querySelectorAll('.tag');
+                    tags.forEach((tag, i) => {
+                        setTimeout(() => {
+                            tag.style.transform = 'scale(1.1)';
+                        }, i * 50);
+                    });
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = '';
+                    this.style.boxShadow = '';
+                    
+                    const image = this.querySelector('.product-image');
+                    if (image) {
+                        image.style.transform = '';
+                    }
+                    
+                    const tags = this.querySelectorAll('.tag');
+                    tags.forEach(tag => {
+                        tag.style.transform = '';
+                    });
+                });
+            });
+        }
+
+        function initCompanyAnimations() {
+            const companyTitles = document.querySelectorAll('.company-title');
+            
+            companyTitles.forEach((title, index) => {
+                title.style.setProperty('--i', index);
+                
+                // Staggered appearance animation
+                setTimeout(() => {
+                    title.style.opacity = '1';
+                    title.style.transform = 'translateX(0)';
+                }, index * 200);
+                
+                // Hover animation
+                title.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.02) translateX(5px)';
+                    
+                    const logo = this.querySelector('.company-logo');
+                    if (logo) {
+                        logo.style.transform = 'rotate(360deg) scale(1.3)';
+                    }
+                });
+                
+                title.addEventListener('mouseleave', function() {
+                    this.style.transform = '';
+                    
+                    const logo = this.querySelector('.company-logo');
+                    if (logo) {
+                        logo.style.transform = '';
+                    }
+                });
+            });
+        }
+
+        // Enhanced particle effect for buy buttons
+        function createParticles(event, element) {
+            const rect = element.getBoundingClientRect();
+            const x = event.clientX - rect.left;
+            const y = event.clientY - rect.top;
+            
+            for (let i = 0; i < 8; i++) {
+                const particle = document.createElement('div');
+                particle.style.position = 'absolute';
+                particle.style.left = x + 'px';
+                particle.style.top = y + 'px';
+                particle.style.width = '6px';
+                particle.style.height = '6px';
+                particle.style.background = 'var(--accent-green)';
+                particle.style.borderRadius = '50%';
+                particle.style.pointerEvents = 'none';
+                particle.style.zIndex = '1000';
+                
+                element.style.position = 'relative';
+                element.appendChild(particle);
+                
+                const angle = (Math.PI * 2 * i) / 8;
+                const velocity = 40;
+                const vx = Math.cos(angle) * velocity;
+                const vy = Math.sin(angle) * velocity;
+                
+                animateParticle(particle, vx, vy);
+            }
+            
+            // Button click animation
+            element.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                element.style.transform = '';
+            }, 150);
+        }
+
+        function animateParticle(particle, vx, vy) {
+            let posX = 0;
+            let posY = 0;
+            let opacity = 1;
+            let scale = 1;
+            
+            function animate() {
+                posX += vx * 0.08;
+                posY += vy * 0.08;
+                opacity -= 0.015;
+                scale += 0.02;
+                
+                particle.style.transform = `translate(${posX}px, ${posY}px) scale(${scale})`;
+                particle.style.opacity = opacity;
+                
+                if (opacity > 0) {
+                    requestAnimationFrame(animate);
+                } else {
+                    particle.remove();
+                }
+            }
+            
+            animate();
+        }
+    </script>
+    
+    <style>
+        /* Products page specific styles */
+        .products-hero {
+            padding: 8rem 0 4rem;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(26, 77, 46, 0.1), rgba(74, 124, 90, 0.1));
+        }
+        
+        .page-title {
+            font-size: 4rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary-green), var(--accent-green));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+            animation: titleSlideIn 1s ease;
+        }
+        
+        .page-subtitle {
+            font-size: 1.5rem;
+            color: var(--text-light);
+            margin-bottom: 3rem;
+            animation: subtitleFade 1s ease 0.3s both;
+        }
+        
+        .filter-tabs {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        
+        .filter-btn {
+            padding: 1rem 2rem;
+            background: transparent;
+            border: 2px solid var(--accent-green);
+            color: var(--accent-green);
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--transition-bounce);
+            font-size: 1rem;
+        }
+        
+        .filter-btn:hover {
+            background: var(--accent-green);
+            color: var(--white);
+            transform: translateY(-3px) scale(1.05);
+        }
+        
+        .filter-btn.active {
+            background: var(--accent-green);
+            color: var(--white);
+            transform: scale(1.05);
+        }
+        
+        .category-stats {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+        
+        .stat {
+            padding: 0.5rem 1rem;
+            background: rgba(74, 124, 90, 0.1);
+            border-radius: 15px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--accent-green);
+        }
+        
+        .company-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            position: relative;
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: var(--transition-smooth);
+        }
+        
+        .company-logo {
+            font-size: 2.5rem;
+            transition: var(--transition-bounce);
+        }
+        
+        .company-badge {
+            position: absolute;
+            right: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        
+        .product-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+        
+        .tag {
+            padding: 0.3rem 0.8rem;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            transition: var(--transition-smooth);
+        }
+        
+        .tag.insecticide {
+            background: rgba(255, 107, 107, 0.2);
+            color: #ff6b6b;
+        }
+        
+        .tag.herbicide {
+            background: rgba(51, 217, 178, 0.2);
+            color: #33d9b2;
+        }
+        
+        .tag.fungicide {
+            background: rgba(52, 152, 219, 0.2);
+            color: #3498db;
+        }
+        
+        .tag.systemic {
+            background: rgba(155, 89, 182, 0.2);
+            color: #9b59b6;
+        }
+        
+        .tag.premium {
+            background: rgba(241, 196, 15, 0.2);
+            color: #f1c40f;
+        }
+        
+        .tag.broad-spectrum {
+            background: rgba(230, 126, 34, 0.2);
+            color: #e67e22;
+        }
+        
+        .tag.preventive {
+            background: rgba(46, 204, 113, 0.2);
+            color: #2ecc71;
+        }
+        
+        .tag.dual-action {
+            background: rgba(52, 73, 94, 0.2);
+            color: #34495e;
+        }
+        
+        .tag.selective {
+            background: rgba(26, 188, 156, 0.2);
+            color: #1abc9c;
+        }
+        
+        .tag.multi-purpose {
+            background: rgba(155, 89, 182, 0.2);
+            color: #9b59b6;
+        }
+        
+        .tag.pre-emergence {
+            background: rgba(231, 76, 60, 0.2);
+            color: #e74c3c;
+        }
+        
+        .tag.specialized {
+            background: rgba(52, 152, 219, 0.2);
+            color: #3498db;
+        }
+        
+        /* Enhanced animations */
+        @keyframes titleSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes subtitleFade {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 2.5rem;
+            }
+            
+            .page-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .filter-tabs {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .filter-btn {
+                width: 200px;
+            }
+            
+            .company-badge {
+                position: static;
+                transform: none;
+                margin-left: auto;
+            }
+            
+            .category-stats {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</body>
+</html>
